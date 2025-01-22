@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
+import { COLORS } from "./src/styles/colors";
 
 export default {
   content: [
@@ -8,11 +10,21 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["IBM Plex Mono"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: COLORS.primary,
+        secondary: COLORS.secondary,
+        hoverDark: COLORS.hoverDark,
+        lightGrey: COLORS.lightGray,
+      },
+      borderWidth: {
+        30: "30px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 } satisfies Config;
