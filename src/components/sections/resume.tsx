@@ -7,6 +7,9 @@ import SectionTitle from "../elements/section_title";
 import MarqueeItem from "../items/marquee_item";
 
 const Resume = () => {
+  const cv_url =
+    "https://drive.google.com/file/d/1paNwyrpGR9gF7Jyroet1r11xT9UoUQxl/view?usp=sharing";
+
   return (
     <div className="flex flex-col justify-center mx-10 lg:mx-auto mt-5 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
       <div className="mb-16">
@@ -24,7 +27,8 @@ const Resume = () => {
         <DefaultButton
           title="Download CV"
           onClick={() => {
-            console.log("Download CV COYYYYY");
+            // console.log("Download CV COYYYYY");
+            window.open(cv_url, "_blank");
           }}
         />
       </div>
