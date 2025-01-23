@@ -5,7 +5,7 @@ import { educationData } from "@/utils/dummy";
 
 const EducationSection = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-10">
       <SectionTitle title="Education" />
       <div className="flex flex-col md:flex-row md:flex-wrap md:justify-between gap-12">
         {educationData.map(

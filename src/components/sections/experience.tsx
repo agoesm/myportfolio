@@ -5,7 +5,7 @@ import SectionTitle from "../elements/section_title";
 
 const ExperienceSection = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-10">
       <SectionTitle title="Experience" />
       <div className="flex flex-col md:flex-row md:flex-wrap md:justify-between gap-11">
         {experienceData.map(

@@ -1,3 +1,27 @@
+import {
+  FaAndroid,
+  FaApple,
+  FaCss3Alt,
+  FaFigma,
+  FaHtml5,
+  FaJs,
+  FaReact,
+} from "react-icons/fa";
+import { FaFlutter } from "react-icons/fa6";
+import { RiFirebaseFill } from "react-icons/ri";
+import {
+  SiDart,
+  SiGetx,
+  SiGithub,
+  SiGitlab,
+  SiJest,
+  SiNextdotjs,
+  SiRedux,
+  SiTailwindcss,
+  SiTestinglibrary,
+  SiTypescript,
+} from "react-icons/si";
+
 export const experienceData = [
   {
     // company: "PT. InfoPedia Terpadu",
@@ -30,24 +54,32 @@ export const educationData = [
 ];
 
 export const skillData = [
-  "Mobile Development",
-  "Web Development",
-  "Android",
-  "iOS",
-  "React",
-  "React Native",
-  "Flutter",
-  "JavaScript",
-  "TypeScript",
-  "Dart",
-  "Redux",
-  "GetX",
-  "Firebase",
-  "Git",
-  "Figma",
-  "Jest",
-  "React Testing Library",
-  "React Native Testing Library",
+  { name: "React", color: "#61dafb", icon: <FaReact /> },
+  { name: "Next.js", color: "#000000", icon: <SiNextdotjs /> },
+  { name: "React Native", color: "#61dafb", icon: <FaReact /> },
+  { name: "Flutter", color: "#02569b", icon: <FaFlutter /> },
+  { name: "JavaScript", color: "#f7df1e", icon: <FaJs /> },
+  { name: "TypeScript", color: "#007acc", icon: <SiTypescript /> },
+  { name: "Dart", color: "#00b4ab", icon: <SiDart /> },
+  { name: "Html", color: "#e34c26", icon: <FaHtml5 /> },
+  { name: "Css", color: "#264de4", icon: <FaCss3Alt /> },
+  { name: "Tailwind CSS", color: "#38bdf8", icon: <SiTailwindcss /> },
+  { name: "Redux", color: "#764abc", icon: <SiRedux /> },
+  { name: "GetX", color: "#08b6f9", icon: <SiGetx /> },
+];
+export const skillData2 = [
+  { name: "Android", color: "#3ddc84", icon: <FaAndroid /> },
+  { name: "iOS", color: "#000000", icon: <FaApple /> },
+  { name: "Firebase", color: "#ffca28", icon: <RiFirebaseFill /> },
+  { name: "Github", color: "#181717", icon: <SiGithub /> },
+  { name: "Gitlab", color: "#fca121", icon: <SiGitlab /> },
+  { name: "Figma", color: "#a259ff", icon: <FaFigma /> },
+  { name: "Jest", color: "#c21325", icon: <SiJest /> },
+  {
+    name: "React Testing Library",
+    color: "#e33332",
+    icon: <SiTestinglibrary />,
+  },
 ];
 
 export const portfolioData = [
