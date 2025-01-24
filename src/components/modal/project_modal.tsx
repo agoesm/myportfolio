@@ -13,6 +13,8 @@ type ProjectDetailsModalProps = {
     client: string;
     category: string;
     techStack: string[];
+    github: string | null;
+    liveDemo: string | null;
   };
 };
 

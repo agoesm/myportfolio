@@ -4,10 +4,11 @@ import React, { useState } from "react";
 import { Box, Grid, Tab, Tabs } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
 import { portfolioData } from "@/utils/dummy";
-import ProjectCard from "../items/project_card";
+// import ProjectCard from "../items/project_card";
 import { COLORS } from "@/styles/colors";
 import ProjectModal from "../modal/project_modal";
 import SectionTitle from "../elements/section_title";
+import ProjectCard2 from "../items/project_card2";
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -33,6 +34,7 @@ const Portfolio = () => {
 
   return (
     <div className="flex flex-col justify-center mb-20 mx-10 lg:mx-auto mt-5 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg">
+      {/* <div className="flex flex-col justify-start mx-10 lg:mx-auto mt-5 max-w-screen-lg"> */}
       <SectionTitle title="Portfolio" />
 
       <Box sx={{ maxWidth: "lg", mx: "auto" }}>
@@ -66,7 +68,7 @@ const Portfolio = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
-            <Grid container spacing={3}>
+            <Grid container spacing={3} className="w-full">
               {filteredProjects.map((project, index) => (
                 <Grid item xs={12} sm={6} md={4} key={index}>
                   <motion.div
@@ -74,7 +76,7 @@ const Portfolio = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <ProjectCard
+                    <ProjectCard2
                       {...project}
                       onClick={() => handleOpenModalProject(project)}
                     />
@@ -82,6 +84,11 @@ const Portfolio = () => {
                 </Grid>
               ))}
             </Grid>
+            {filteredProjects.length === 0 && (
+              <div className="w-full text-center mt-10">
+                <p className="text-gray-500">No projects to show</p>
+              </div>
+            )}
           </motion.div>
         </AnimatePresence>
       </Box>

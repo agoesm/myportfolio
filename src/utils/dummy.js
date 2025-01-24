@@ -97,6 +97,8 @@ export const portfolioData = [
       "Jest",
       "React Testing Library",
     ],
+    github: null,
+    liveDemo: null,
   },
   {
     title: "ATM Business Information System",
@@ -106,6 +108,8 @@ export const portfolioData = [
     client: "CIMB NIAGA",
     category: "web",
     techStack: ["React Js", "Material UI", "Jest", "React Testing Library"],
+    github: null,
+    liveDemo: null,
   },
   {
     title: "ATM Business Mobile",
@@ -123,6 +127,8 @@ export const portfolioData = [
       "Jest",
       "React Native Testing Library",
     ],
+    github: null,
+    liveDemo: null,
   },
   {
     title: "Al-Quran App",
@@ -132,5 +138,17 @@ export const portfolioData = [
     client: "Personal",
     category: "mobile",
     techStack: ["Flutter", "Dio", "GetX"],
+    github: "https://github.com/agoesm/Al-Quran",
+    liveDemo: null,
+  },
+  {
+    title: "Agus's Portfolio",
+    description: "Ini merupakan portfolio website",
+    image: "/images/project5.jpeg",
+    client: "Personal",
+    category: "web",
+    techStack: ["Next.Js", "Tailwind CSS", "Material UI"],
+    github: "https://github.com/agoesm/myportfolio",
+    liveDemo: "https://agoesm.vercel.app/",
   },
 ];
